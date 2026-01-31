@@ -120,7 +120,7 @@ export default function QuemSomosModal({ isOpen, onClose }: QuemSomosModalProps)
                                             Laura desafiou todas as expectativas, mostrando que o amor é mais forte que qualquer dor. O Instituto vai além de preservar sua memória; é um tributo à fé e à certeza de que o amor floresce.
                                         </p>
                                         <p>
-                                            A história de Laura nos inspira a acreditar que o amor é imbatível. Conheçam mais sobre o nosso instituto e já nos siga no{' '}
+                                            A história de Laura nos inspira a acreditar que o amor é imbatível. Conheçam mais sobre o nosso instituto e já <br /> nos siga no{' '}
                                             <motion.a
                                                 href="https://instagram.com/institutosobreviver37"
                                                 target="_blank"
