@@ -12,7 +12,6 @@ export default function Header() {
                     className="font-bold text-white hover:text-stone-100 transition-colors flex items-center gap-2"
                 >
                     <span className="text-lg tracking-wide">@institutosobreviver37</span>
-                    <span className="text-xs bg-red-500 text-white px-1 rounded">DEBUG-v2</span>
                 </a>
 
                 {/* Navigation - Centered and Uniform */}
@@ -32,7 +31,7 @@ export default function Header() {
                     href="https://wa.me/553797783092"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-transparent border border-white text-white px-8 py-2 rounded-full font-bold text-sm hover:bg-azure-deep hover:text-[#34bbce] hover:border-azure-deep transition-all shadow-lg"
+                    className="px-8 py-2 rounded-full font-bold text-sm shadow-lg transition-all border border-azure-deep bg-azure-deep text-azure-vibrant hover:bg-azure-vibrant hover:text-azure-deep hover:border-azure-vibrant"
                 >
                     Fale Conosco
                 </a>
