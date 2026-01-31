@@ -187,7 +187,7 @@ export default function Hero() {
                     <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
                         <button
                             onClick={() => setIsModalOpen(true)}
-                            className="px-8 py-3 bg-azure-vibrant text-bone rounded-full font-bold text-lg hover:bg-azure-deep transition-all transform hover:scale-105 shadow-lg text-center cursor-pointer"
+                            className="px-8 py-3 bg-azure-vibrant text-bone rounded-full font-bold text-lg hover:bg-azure-deep hover:text-white transition-all transform hover:scale-105 shadow-lg text-center cursor-pointer"
                         >
                             Quem Somos
                         </button>

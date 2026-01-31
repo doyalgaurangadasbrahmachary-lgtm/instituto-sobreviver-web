@@ -31,7 +31,7 @@ export default function Header() {
                     href="https://wa.me/553797783092"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-8 py-2 rounded-full font-bold text-sm shadow-lg transition-all border border-azure-deep bg-azure-deep text-azure-vibrant hover:bg-azure-vibrant hover:text-azure-deep hover:border-azure-vibrant"
+                    className="px-8 py-2 rounded-full font-bold text-sm shadow-lg transition-all border border-azure-deep bg-azure-deep text-azure-vibrant hover:bg-azure-deep hover:text-white hover:border-azure-deep hover:scale-105"
                 >
                     Fale Conosco
                 </a>
