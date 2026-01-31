@@ -32,7 +32,7 @@ export default function Header() {
                     href="https://wa.me/message/RSUNMVLOFHJYF1"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-transparent border border-white text-white px-8 py-2 rounded-full font-bold text-sm hover:bg-white hover:text-azure-deep transition-all shadow-lg"
+                    className="bg-transparent border border-white text-white px-8 py-2 rounded-full font-bold text-sm hover:bg-white hover:text-azure-vibrant transition-all shadow-lg"
                 >
                     Fale Conosco
                 </a>
