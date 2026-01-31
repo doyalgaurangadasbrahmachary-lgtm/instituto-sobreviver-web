@@ -6,7 +6,7 @@ import { useState, useRef, useEffect } from 'react';
 
 export default function Footer() {
     const [isTooltipVisible, setIsTooltipVisible] = useState(false);
-    const [isLocked, setIsLocked] = useState(false); // Mobile: lock tooltip if tapped
+    const [_isLocked, setIsLocked] = useState(false); // Mobile: lock tooltip if tapped
     const [copiedField, setCopiedField] = useState<string | null>(null);
 
     // Refs for timers
@@ -27,7 +27,7 @@ export default function Footer() {
 
                                 // Auto-close after 4s (requested change) if not locked
                                 closeTimerRef.current = setTimeout(() => {
-                                    setIsTooltipVisible((prev) => {
+                                    setIsTooltipVisible((_prev) => {
                                         // Prevents closing if user locked interaction
                                         // We rely on external locked state clearing logic
                                         return false;
@@ -125,7 +125,7 @@ export default function Footer() {
             } else {
                 throw new Error("Clipboard API unavailable");
             }
-        } catch (err) {
+        } catch (_err) {
             // Fallback for non-secure contexts (like mobile IP access)
             try {
                 const textArea = document.createElement("textarea");
