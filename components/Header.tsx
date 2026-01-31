@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Header() {
     return (
-        <header className="fixed top-0 w-full z-50 bg-azure-vibrant shadow-md">
+        <header className="fixed top-0 w-full z-50 bg-gradient-to-r from-azure-deep to-azure-vibrant shadow-md">
             <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center text-white">
                 {/* Instagram Link */}
                 <a
