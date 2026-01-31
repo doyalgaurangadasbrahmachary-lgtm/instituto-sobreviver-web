@@ -9,7 +9,7 @@ export default function Header() {
                     href="https://instagram.com/institutosobreviver37"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-bold hover:text-white transition-colors flex items-center gap-2 opacity-90 hover:opacity-100"
+                    className="font-bold text-white hover:text-azure-vibrant transition-colors flex items-center gap-2"
                 >
                     <span className="text-lg tracking-wide">@institutosobreviver37</span>
                 </a>

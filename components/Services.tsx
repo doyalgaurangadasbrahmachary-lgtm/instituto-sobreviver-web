@@ -105,8 +105,8 @@ export default function Services() {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                     {services.map((service, index) => (
-                        <div key={index} className="group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-100">
-                            <div className="relative h-64 overflow-hidden">
+                        <div key={index} className="group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 flex flex-col">
+                            <div className="relative h-64 w-full overflow-hidden">
                                 <Image
                                     src={service.image}
                                     alt={service.title}
