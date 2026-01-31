@@ -123,9 +123,9 @@ export default function Hero() {
             {/* Interlacing Waves Background */}
             <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
 
-                {/* Wave 1: Darker Beige/Stone (Back) - Depth */}
+                {/* Wave 1: Deep Slate Teal (Back) - Visible but soft */}
                 <motion.div
-                    className="absolute bottom-0 w-[150%] h-[120%] text-[#d6d6ce]/40 fill-current"
+                    className="absolute bottom-0 w-[150%] h-[120%] text-[#24526e]/30 fill-current"
                     custom={0}
                     initial="hidden"
                     animate={showWaves ? "visible" : "exit"}
@@ -137,9 +137,9 @@ export default function Hero() {
                     </svg>
                 </motion.div>
 
-                {/* Wave 2: White/Light Cream (Middle) - Highlight */}
+                {/* Wave 2: Medium Soft Teal (Middle) - The main color */}
                 <motion.div
-                    className="absolute bottom-0 w-[150%] h-[100%] text-white/50 fill-current"
+                    className="absolute bottom-0 w-[150%] h-[100%] text-[#4a8ea1]/25 fill-current"
                     custom={1}
                     initial="hidden"
                     animate={showWaves ? "visible" : "exit"}
@@ -151,9 +151,9 @@ export default function Hero() {
                     </svg>
                 </motion.div>
 
-                {/* Wave 3: Subtle Stone (Front) - Transition */}
+                {/* Wave 3: Lightest Slate (Front) - Subtle overlay */}
                 <motion.div
-                    className="absolute bottom-0 w-[150%] h-[90%] text-stone-200/40 fill-current"
+                    className="absolute bottom-0 w-[150%] h-[90%] text-[#8bbcc4]/20 fill-current"
                     custom={2}
                     initial="hidden"
                     animate={showWaves ? "visible" : "exit"}
