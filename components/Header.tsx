@@ -27,12 +27,11 @@ export default function Header() {
                     </Link>
                 </nav>
 
-                {/* Call to Action */}
                 <a
-                    href="https://wa.me/message/RSUNMVLOFHJYF1"
+                    href="https://wa.me/553797783092"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-transparent border border-white text-white px-8 py-2 rounded-full font-bold text-sm hover:bg-white hover:text-azure-vibrant transition-all shadow-lg"
+                    className="bg-transparent border border-white text-white px-8 py-2 rounded-full font-bold text-sm hover:bg-azure-deep hover:text-azure-vibrant hover:border-azure-deep transition-all shadow-lg"
                 >
                     Fale Conosco
                 </a>
