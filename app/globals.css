@@ -13,12 +13,13 @@
     --foreground: var(--azure-deep);
 }
 
-@media (prefers-color-scheme: dark) {
+/* Dark mode override removed to enforce light theme on mobile */
+/* @media (prefers-color-scheme: dark) {
     :root {
         --background: #0a0a0a;
         --foreground: #ededed;
     }
-}
+} */
 
 body {
     color: var(--foreground);
