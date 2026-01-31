@@ -125,7 +125,7 @@ export default function Hero() {
 
                 {/* Wave 1: Soft Neutral (Back) */}
                 <motion.div
-                    className="absolute bottom-0 w-[150%] h-[120%] text-stone-300/20 fill-current"
+                    className="absolute bottom-0 w-[150%] h-[120%] text-stone-400/30 fill-current"
                     custom={0}
                     initial="hidden"
                     animate={showWaves ? "visible" : "exit"}
@@ -139,7 +139,7 @@ export default function Hero() {
 
                 {/* Wave 2: Very Light Azure (Middle) */}
                 <motion.div
-                    className="absolute bottom-0 w-[150%] h-[100%] text-azure-vibrant/5 fill-current"
+                    className="absolute bottom-0 w-[150%] h-[100%] text-azure-vibrant/20 fill-current"
                     custom={1}
                     initial="hidden"
                     animate={showWaves ? "visible" : "exit"}
@@ -153,7 +153,7 @@ export default function Hero() {
 
                 {/* Wave 3: Softest Cream/Stone (Front) */}
                 <motion.div
-                    className="absolute bottom-0 w-[150%] h-[90%] text-stone-400/10 fill-current"
+                    className="absolute bottom-0 w-[150%] h-[90%] text-stone-500/10 fill-current"
                     custom={2}
                     initial="hidden"
                     animate={showWaves ? "visible" : "exit"}
