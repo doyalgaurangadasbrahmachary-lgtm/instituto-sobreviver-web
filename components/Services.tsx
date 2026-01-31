@@ -111,7 +111,7 @@ export default function Services() {
                                     src={service.image}
                                     alt={service.title}
                                     fill
-                                    className={`object-cover ${service.className} grayscale-transition group-hover:scale-110 duration-700`}
+                                    className={`object-cover ${service.className} grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110`}
                                 />
                             </div>
                             <div className="p-8">
