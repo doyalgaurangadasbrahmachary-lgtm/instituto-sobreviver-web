@@ -12,6 +12,7 @@ export default function Header() {
                     className="font-bold text-white hover:text-stone-100 transition-colors flex items-center gap-2"
                 >
                     <span className="text-lg tracking-wide">@institutosobreviver37</span>
+                    <span className="text-xs bg-red-500 text-white px-1 rounded">DEBUG-v2</span>
                 </a>
 
                 {/* Navigation - Centered and Uniform */}
