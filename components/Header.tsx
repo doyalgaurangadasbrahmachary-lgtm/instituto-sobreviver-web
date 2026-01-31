@@ -16,13 +16,13 @@ export default function Header() {
 
                 {/* Navigation - Centered and Uniform */}
                 <nav className="hidden md:flex flex-1 justify-center gap-12">
-                    <Link href="#historia" className="text-sm font-semibold uppercase tracking-wider hover:text-white hover:underline decoration-2 underline-offset-4 transition-all opacity-90 hover:opacity-100">
+                    <Link href="#historia" className="text-sm font-semibold uppercase tracking-wider text-white hover:text-stone-200 hover:underline decoration-2 underline-offset-4 transition-all">
                         Nossa História
                     </Link>
-                    <Link href="#impacto" className="text-sm font-semibold uppercase tracking-wider hover:text-white hover:underline decoration-2 underline-offset-4 transition-all opacity-90 hover:opacity-100">
+                    <Link href="#impacto" className="text-sm font-semibold uppercase tracking-wider text-white hover:text-stone-200 hover:underline decoration-2 underline-offset-4 transition-all">
                         Impacto
                     </Link>
-                    <Link href="#servicos" className="text-sm font-semibold uppercase tracking-wider hover:text-white hover:underline decoration-2 underline-offset-4 transition-all opacity-90 hover:opacity-100">
+                    <Link href="#servicos" className="text-sm font-semibold uppercase tracking-wider text-white hover:text-stone-200 hover:underline decoration-2 underline-offset-4 transition-all">
                         Serviços
                     </Link>
                 </nav>
