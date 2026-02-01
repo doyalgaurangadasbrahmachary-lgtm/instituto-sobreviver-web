@@ -125,7 +125,7 @@ export default function Hero() {
 
                 {/* Wave 1: Deep Slate Teal (Back) - Visible but soft */}
                 <motion.div
-                    className="absolute bottom-0 w-[150%] h-[120%] text-[#24526e]/30 fill-current"
+                    className="absolute bottom-0 w-[300%] md:w-[150%] h-[120%] text-[#24526e]/15 fill-current"
                     custom={0}
                     initial="hidden"
                     animate={showWaves ? "visible" : "exit"}
@@ -139,7 +139,7 @@ export default function Hero() {
 
                 {/* Wave 2: Medium Soft Teal (Middle) - The main color */}
                 <motion.div
-                    className="absolute bottom-0 w-[150%] h-[100%] text-[#4a8ea1]/25 fill-current"
+                    className="absolute bottom-0 w-[300%] md:w-[150%] h-[100%] text-[#4a8ea1]/15 fill-current"
                     custom={1}
                     initial="hidden"
                     animate={showWaves ? "visible" : "exit"}
@@ -153,7 +153,7 @@ export default function Hero() {
 
                 {/* Wave 3: Lightest Slate (Front) - Subtle overlay */}
                 <motion.div
-                    className="absolute bottom-0 w-[150%] h-[90%] text-[#8bbcc4]/20 fill-current"
+                    className="absolute bottom-0 w-[300%] md:w-[150%] h-[90%] text-[#8bbcc4]/12 fill-current"
                     custom={2}
                     initial="hidden"
                     animate={showWaves ? "visible" : "exit"}
