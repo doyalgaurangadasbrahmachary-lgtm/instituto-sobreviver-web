@@ -153,7 +153,7 @@ export default function Hero() {
 
                 {/* Wave 3: Lightest Slate (Front) - Subtle overlay */}
                 <motion.div
-                    className="absolute bottom-0 w-[300%] md:w-[150%] h-[90%] text-[#8bbcc4]/12 fill-current"
+                    className="absolute bottom-0 w-[300%] md:w-[150%] h-[90%] text-[#8bbcc4]/50 fill-current"
                     custom={2}
                     initial="hidden"
                     animate={showWaves ? "visible" : "exit"}
