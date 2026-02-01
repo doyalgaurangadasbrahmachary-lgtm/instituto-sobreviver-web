@@ -151,7 +151,7 @@ export default function Hero() {
                     </svg>
                 </motion.div>
 
-                {/* Wave 3: Lightest Slate (Front) - Subtle overlay */}
+                {/* Wave 3: Lightest Slate (Front) - Opacity Boosted to 50% */}
                 <motion.div
                     className="absolute bottom-0 w-[300%] md:w-[150%] h-[90%] text-[#8bbcc4]/50 fill-current"
                     custom={2}
