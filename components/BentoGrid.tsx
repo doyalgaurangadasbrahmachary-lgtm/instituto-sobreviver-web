@@ -103,18 +103,15 @@ export default function BentoGrid() {
                                 <motion.div
                                     className="relative w-full h-full"
                                     whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 1.05 }}
                                     transition={{ duration: 0.5 }}
                                 >
                                     <Image
                                         src={item.image}
                                         alt={item.title}
                                         fill
-                                        className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out"
+                                        className="object-cover grayscale group-hover:grayscale-0 group-active:grayscale-0 transition-all duration-700 ease-in-out"
                                     />
-                                    {/* Overlay Title for Mobile/Context */}
-                                    <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent md:hidden">
-                                        <p className="text-white font-bold text-lg">{item.subtitle}</p>
-                                    </div>
                                 </motion.div>
                             </div>
 
@@ -122,6 +119,7 @@ export default function BentoGrid() {
                             <motion.div
                                 className="w-full md:w-1/2 p-8 bg-white rounded-3xl shadow-xl border border-white/50 relative overflow-hidden group/card"
                                 whileHover={{ y: -8, scale: 1.02 }}
+                                whileTap={{ y: -5, scale: 1.02 }}
                                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
                             >
                                 <div className="flex flex-col items-start text-left space-y-4 relative z-10">
