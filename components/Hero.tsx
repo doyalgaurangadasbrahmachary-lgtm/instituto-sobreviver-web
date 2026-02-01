@@ -162,7 +162,7 @@ return (
                 className="relative w-full h-[400px] md:h-[600px] flex justify-center items-center order-1 md:order-2 cursor-pointer"
                 onHoverStart={() => setIsHovered(true)}
                 onHoverEnd={() => setIsHovered(false)}
-                // Touch Handler: One tap triggers full cycle
+                // Touch Handler: One tap triggers full cycle (5s duration)
                 onTapStart={triggerCycle}
 
                 // Unified Animation: Scale + Rotate based on Active State (Hover or Cycle)
