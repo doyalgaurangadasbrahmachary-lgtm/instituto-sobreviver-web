@@ -109,11 +109,11 @@ export default function BentoGrid() {
                                         src={item.image}
                                         alt={item.title}
                                         fill
-                                        className="object-cover grayscale-transition transition-all duration-700 ease-in-out"
+                                        className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out"
                                     />
                                     {/* Overlay Title for Mobile/Context */}
                                     <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent md:hidden">
-                                        <p className="text-bone font-bold text-lg">{item.subtitle}</p>
+                                        <p className="text-white font-bold text-lg">{item.subtitle}</p>
                                     </div>
                                 </motion.div>
                             </div>
