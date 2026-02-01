@@ -7,58 +7,11 @@ import QuemSomosModal from './QuemSomosModal';
 
 export default function Hero() {
     const [isHovered, setIsHovered] = useState(false);
-    const [isAutoAnimating, setIsAutoAnimating] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [isMobile, setIsMobile] = useState(false);
-    const [mobileTapActive, setMobileTapActive] = useState(false);
-
-    // Mobile Check
-    useEffect(() => {
-        if (typeof window !== 'undefined') {
-            const checkMobile = () => setIsMobile(window.innerWidth < 768);
-            checkMobile();
-            window.addEventListener('resize', checkMobile);
-            return () => window.removeEventListener('resize', checkMobile);
-        }
-    }, []);
-
-    // Auto Animation Loop
-    useEffect(() => {
-        let activeTimer: NodeJS.Timeout;
-        let inactiveTimer: NodeJS.Timeout;
-        let isMounted = true;
-
-        const startLoop = () => {
-            if (!isMounted) return;
-            setIsAutoAnimating(true);
-
-            // Active for 5 seconds
-            activeTimer = setTimeout(() => {
-                if (!isMounted) return;
-                setIsAutoAnimating(false);
-
-                // Inactive for 7 seconds, then restart
-                inactiveTimer = setTimeout(() => {
-                    if (!isMounted) return;
-                    startLoop();
-                }, 7000);
-            }, 5000);
-        };
-
-        // Start initially
-        startLoop();
-
-        return () => {
-            isMounted = false;
-            clearTimeout(activeTimer);
-            clearTimeout(inactiveTimer);
-        };
-    }, []);
 
     // Logic for showing waves: 
-    // Mobile: ONLY auto animation (ignore hover/tap for waves)
-    // Desktop: Auto OR Hover
-    const showWaves = isMobile ? isAutoAnimating : (isHovered || isAutoAnimating);
+    // Reactive: Shows whenever isHovered is true (triggered by Mouse Hover on PC or Touch Hold on Mobile)
+    const showWaves = isHovered;
 
     // Animation variants for the waves
     const waveVariants = {
@@ -174,6 +127,10 @@ export default function Hero() {
                     className="flex flex-col items-start text-left z-10 order-2 md:order-1"
                     animate={{ scale: isHovered ? 1.05 : 1, x: isHovered ? 10 : 0 }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
+                    // Touch Handlers for Text (Mobile)
+                    onTapStart={() => setIsHovered(true)}
+                    onTapCancel={() => setIsHovered(false)}
+                    onTap={() => setIsHovered(false)}
                 >
                     <h1 className="text-5xl md:text-7xl font-bold text-azure-deep mb-6 drop-shadow-sm leading-tight">
                         Instituto <br />
@@ -199,14 +156,10 @@ export default function Hero() {
                     className="relative w-full h-[400px] md:h-[600px] flex justify-center items-center order-1 md:order-2 cursor-pointer"
                     onHoverStart={() => setIsHovered(true)}
                     onHoverEnd={() => setIsHovered(false)}
-                    onTapStart={() => {
-                        // On Mobile, Tap does NOT trigger waves (isHovered stays false effectively for wave logic due to showWaves check)
-                        if (!isMobile) setIsHovered(true);
-
-                        setMobileTapActive(true);
-                        setTimeout(() => setMobileTapActive(false), 2000); // 2s total lifecycle
-                    }}
+                    // Touch Handlers for Logo (Mobile & Touch Devices)
+                    onTapStart={() => setIsHovered(true)}
                     onTapCancel={() => setIsHovered(false)}
+                    onTap={() => setIsHovered(false)}
                     animate={{ scale: isHovered ? 1.05 : 1 }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
                     whileHover={{ rotate: [0, -2, 2, 0], transition: { duration: 2, repeat: Infinity } }}
