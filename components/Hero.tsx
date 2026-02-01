@@ -211,29 +211,7 @@ export default function Hero() {
                     transition={{ duration: 0.6, ease: "easeOut" }}
                     whileHover={{ rotate: [0, -2, 2, 0], transition: { duration: 2, repeat: Infinity } }}
                 >
-                    {/* Pink Circle Animation (Mobile Only) - Z-Index 20 to be ABOVE logo */}
-                    {isMobile && (
-                        <div className="absolute inset-0 pointer-events-none z-20 flex items-center justify-center">
-                            <svg
-                                className="w-[108%] h-[108%] max-w-[500px] max-h-[500px] mt-4"
-                                viewBox="0 0 100 100"
-                                style={{ transform: 'rotate(-90deg)' }}
-                            >
-                                <motion.circle
-                                    cx="50"
-                                    cy="50"
-                                    r="49"
-                                    fill="none"
-                                    stroke="#ffccd5"
-                                    strokeWidth="2"
-                                    variants={circleVariants}
-                                    initial="hidden"
-                                    animate={mobileTapActive ? "visible" : "exit"}
-                                    strokeLinecap="round"
-                                />
-                            </svg>
-                        </div>
-                    )}
+                    {/* Pink Circle Animation Removed as per request */}
 
                     <Image
                         src="/images/logo.png"
