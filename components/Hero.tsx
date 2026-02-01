@@ -14,7 +14,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
 const triggerCycle = () => {
     if (isCycleActive) return; // Prevent spam
     setIsCycleActive(true);
-    setTimeout(() => setIsCycleActive(false), 5000);
+    setTimeout(() => setIsCycleActive(false), 5500);
 };
 
 // Logic for showing waves: 
