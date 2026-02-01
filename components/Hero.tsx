@@ -120,7 +120,7 @@ export default function Hero() {
 
             <QuemSomosModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
-            {/* Interlacing Waves Background */}
+            {/* Interlacing Waves Background - Mobile Width Adjusted to 300% */}
             <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
 
                 {/* Wave 1: Deep Slate Teal (Back) - Visible but soft */}
