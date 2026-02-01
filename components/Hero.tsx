@@ -127,7 +127,7 @@ export default function Hero() {
                     className="flex flex-col items-start text-left z-10 order-2 md:order-1"
                     animate={{ scale: isHovered ? 1.05 : 1, x: isHovered ? 10 : 0 }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
-                    // Touch Handlers for Text (Mobile)
+                    // Touch Handlers for Text (Mobile) - Trigger waves on hold
                     onTapStart={() => setIsHovered(true)}
                     onTapCancel={() => setIsHovered(false)}
                     onTap={() => setIsHovered(false)}
